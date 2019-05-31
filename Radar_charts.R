@@ -252,7 +252,7 @@ radarchart( India  , axistype=4 ,
 
 Japan <- filter(Digital_IQ, Region=="Japan")
 Japan <- rbind(rep(100,9) , rep(0,9) , Japan) # add max and min values to individual country
-Japan <- Japan[-c(1)] # drop country film from writing into RadarChart
+Japan <- Japan[-c(1)] # drop country field from writing into RadarChart
 
 radarchart( Japan  , axistype=4 ,
             
