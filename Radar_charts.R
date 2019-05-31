@@ -11,7 +11,7 @@ Digital_IQ <- select(Digital_IQ, -c(Average, Band)) # drop average and band colu
 
 Nordics <- filter(Digital_IQ, Region=="Nordics")
 Nordics <- rbind(rep(100,9) , rep(0,9) , Nordics) # add max and min values to individual country
-Nordics <- Nordics[-c(1)] # drop country film from writing into RadarChart
+Nordics <- Nordics[-c(1)] # drop country field from writing into RadarChart
 
 radarchart( Nordics  , axistype=4 , 
             
@@ -32,7 +32,7 @@ radarchart( Nordics  , axistype=4 ,
 
 UK <- filter(Digital_IQ, Region=="UK")
 UK <- rbind(rep(100,9) , rep(0,9) , UK) # add max and min values to individual country
-UK <- UK[-c(1)] # drop country film from writing into RadarChart
+UK <- UK[-c(1)] # drop country field from writing into RadarChart
 
 radarchart( UK  , axistype=4 , 
             
@@ -73,7 +73,7 @@ radarchart( Netherlands  , axistype=4 ,
 
 Spain <- filter(Digital_IQ, Region=="Spain")
 Spain <- rbind(rep(100,9) , rep(0,9) , Spain) # add max and min values to individual country
-Spain <- Spain[-c(1)] # drop country film from writing into RadarChart
+Spain <- Spain[-c(1)] # drop country field from writing into RadarChart
 
 radarchart( Spain  , axistype=4 , 
             
